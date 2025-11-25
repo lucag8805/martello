@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export const metadata = {
   title: 'Unternehmen | Martello Immobilienmanagement',
@@ -30,7 +31,7 @@ export default function UnternehmenPage() {
       <section className="bg-white py-12">
         <div className="container-narrow mx-auto px-6 lg:px-8">
           <Image
-            src="/images/herosectionbild.jpg"
+            src={getImagePath("/images/herosectionbild.jpg")}
             alt="Aachen Skyline Illustration"
             width={1200}
             height={400}
@@ -93,7 +94,7 @@ export default function UnternehmenPage() {
             </div>
             <div>
               <Image
-                src="/images/kaufmaennischdingsverwaltung.jpg"
+                src={getImagePath("/images/kaufmaennischdingsverwaltung.jpg")}
                 alt="Das Martello Team"
                 width={600}
                 height={400}

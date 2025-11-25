@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export const metadata = {
   title: 'HammerBox Selfstorage | Martello',
@@ -46,7 +47,7 @@ export default function SelfStoragePage() {
 
             <div className="relative">
               <Image
-                src="/images/hammerboxdetailansichtvoninnen.jpg"
+                src={getImagePath("/images/hammerboxdetailansichtvoninnen.jpg")}
                 alt="HammerBox Selfstorage Innenansicht"
                 width={600}
                 height={450}
@@ -118,7 +119,7 @@ export default function SelfStoragePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="/images/aachenvonobenmithervergehobenerhammerbox.jpg"
+                src={getImagePath("/images/aachenvonobenmithervergehobenerhammerbox.jpg")}
                 alt="HammerBox Standort in Aachen"
                 width={600}
                 height={400}

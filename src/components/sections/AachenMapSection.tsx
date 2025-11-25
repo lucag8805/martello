@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export default function AachenMapSection() {
   const [isHammerBoxHovered, setIsHammerBoxHovered] = useState(false);
@@ -31,10 +32,10 @@ export default function AachenMapSection() {
           {/* Base Map Image */}
           <div className="relative">
             <Image
-              src={isHammerBoxHovered
+              src={getImagePath(isHammerBoxHovered
                 ? "/images/aachenvonobenmithervergehobenerhammerbox.jpg"
                 : "/images/aachenansichtvonobenmitklickbarerhammerboxuntenrechts.jpg"
-              }
+              )}
               alt="Aachen Stadtansicht mit Martello Standorten"
               width={1200}
               height={800}

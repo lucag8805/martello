@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export default function HeroSection() {
   return (
@@ -54,7 +55,7 @@ export default function HeroSection() {
               {/* Main Image */}
               <div className="relative rounded-2xl overflow-hidden watercolor-shadow">
                 <Image
-                  src="/images/monopolybrettfuerbewerungsseite.jpg"
+                  src={getImagePath("/images/monopolybrettfuerbewerungsseite.jpg")}
                   alt="Martello Immobilien - Starte deine Zukunft"
                   width={600}
                   height={500}

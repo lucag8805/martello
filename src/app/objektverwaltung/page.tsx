@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export const metadata = {
   title: 'Objektverwaltung | Martello Immobilienmanagement',
@@ -50,7 +51,7 @@ export default function ObjektverwaltungPage() {
       <section className="bg-white py-12">
         <div className="container-narrow mx-auto px-6 lg:px-8">
           <Image
-            src="/images/aachenfuerherovonunterseiten.jpg"
+            src={getImagePath("/images/aachenfuerherovonunterseiten.jpg")}
             alt="Aachen Skyline"
             width={1200}
             height={400}
@@ -95,7 +96,7 @@ export default function ObjektverwaltungPage() {
         <div className="container-narrow mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <Image
-              src="/images/kaufmaennischdingsverwaltung.jpg"
+              src={getImagePath("/images/kaufmaennischdingsverwaltung.jpg")}
               alt="Unser Team bei der Arbeit"
               width={600}
               height={400}

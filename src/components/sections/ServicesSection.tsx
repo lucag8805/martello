@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 const services = [
   {
@@ -53,7 +54,7 @@ export default function ServicesSection() {
               {/* Image */}
               <div className="relative h-56 overflow-hidden">
                 <Image
-                  src={service.image}
+                  src={getImagePath(service.image)}
                   alt={service.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

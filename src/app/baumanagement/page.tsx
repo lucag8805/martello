@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export const metadata = {
   title: 'Baumanagement | Martello Immobilienmanagement',
@@ -28,7 +29,7 @@ export default function BaumanagementPage() {
             </div>
             <div>
               <Image
-                src="/images/technischeverwaltung.jpg"
+                src={getImagePath("/images/technischeverwaltung.jpg")}
                 alt="Baumanagement"
                 width={600}
                 height={400}

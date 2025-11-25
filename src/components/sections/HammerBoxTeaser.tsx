@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export default function HammerBoxTeaser() {
   return (
@@ -51,7 +52,7 @@ export default function HammerBoxTeaser() {
           <div className="order-1 lg:order-2 relative">
             <div className="relative rounded-2xl overflow-hidden watercolor-shadow">
               <Image
-                src="/images/hammerboxdetailansichtvoninnen.jpg"
+                src={getImagePath("/images/hammerboxdetailansichtvoninnen.jpg")}
                 alt="HammerBox Selfstorage - Innenansicht"
                 width={600}
                 height={450}

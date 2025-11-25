@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export const metadata = {
   title: 'Immobilien | Martello Immobilienmanagement',
@@ -68,7 +69,7 @@ export default function ImmobilienPage() {
       <section className="bg-white py-12">
         <div className="container-narrow mx-auto px-6 lg:px-8">
           <Image
-            src="/images/lückenfüllerbildfürimmoverwaltung bsp.jpg"
+            src={getImagePath("/images/lückenfüllerbildfürimmoverwaltung bsp.jpg")}
             alt="Immobilien in Aachen"
             width={1200}
             height={400}

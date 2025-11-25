@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export const metadata = {
   title: 'Kontakt | Martello Immobilienmanagement',
@@ -211,7 +212,7 @@ export default function KontaktPage() {
               {/* Aachen Image */}
               <div className="mt-8">
                 <Image
-                  src="/images/aachenfuerherovonunterseiten.jpg"
+                  src={getImagePath("/images/aachenfuerherovonunterseiten.jpg")}
                   alt="Aachen Stadtansicht"
                   width={600}
                   height={300}
