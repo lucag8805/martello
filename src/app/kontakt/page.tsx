@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
@@ -207,9 +208,15 @@ export default function KontaktPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center">
-                <span className="text-gray-400">Kartenansicht (Google Maps Alternative folgt)</span>
+              {/* Aachen Image */}
+              <div className="mt-8">
+                <Image
+                  src="/images/aachenfuerherovonunterseiten.jpg"
+                  alt="Aachen Stadtansicht"
+                  width={600}
+                  height={300}
+                  className="w-full h-64 object-cover rounded-2xl watercolor-shadow"
+                />
               </div>
             </div>
           </div>

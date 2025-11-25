@@ -64,6 +64,19 @@ export default function ImmobilienPage() {
         </div>
       </section>
 
+      {/* Hero Image */}
+      <section className="bg-white py-12">
+        <div className="container-narrow mx-auto px-6 lg:px-8">
+          <Image
+            src="/images/lückenfüllerbildfürimmoverwaltung bsp.jpg"
+            alt="Immobilien in Aachen"
+            width={1200}
+            height={400}
+            className="w-full h-64 object-cover rounded-2xl watercolor-shadow"
+          />
+        </div>
+      </section>
+
       {/* Services */}
       <section className="section-padding bg-white">
         <div className="container-narrow mx-auto px-6 lg:px-8">
